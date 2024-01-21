@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latex Editor</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Latex Editor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/docs.html">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid text-center" id="docJumbotron">
+    <div class="container p-4">
+      <h1 class="display-4">Documentation</h1>
+      <p class="lead">Everything you need to formulate your equation.</p>
+    </div>
+  </div>
+
+  <!-- Docs -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <h2>Introduction</h2>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Welcome to Latex Editor, your dedicated platform for seamlessly formulating scientific and mathematical
+            equations using LaTeX language. Whether you're a student, researcher, or professional, our web app is
+            tailored to simplify the process of creating complex formulas with ease.</p>
+          <h3>Purpose</h3>
+          <p><strong>Latex Editor</strong> is designed to streamline the creation and editing of scientific and
+            mathematical formulas. Our purpose is to provide users with a specialized tool that focuses on the precision
+            and elegance required for equations in various fields.</p>
+          <h3>Target Audience </h3>
+          <p>This web app is crafted for a diverse audience, including:</p>
+          <ul>
+            <li>
+              <h4>Students</h4>Enhance your academic work by effortlessly framing mathematical expressions for
+              assignments and projects.
+            </li>
+            <li>
+              <h4>Researchers</h4>Save time and focus on your research by using a dedicated platform for mathematical
+              notation.
+            </li>
+            <li>
+              <h4>Professionals</h4>Create technical documents and reports with ease, incorporating intricate formulas
+              seamlessly.
+            </li>
+          </ul>
+          <h3>Key Features </h3>
+          <ol>
+            <li>
+              <h4>Simple Text Editor</h4>
+            </li>
+            <p>Enjoy a clean and intuitive text editor specifically designed for LaTeX. Write, edit, and format your
+              equations with ease.</p>
+            <li>
+              <h4>Live Preview</h4>
+            </li>
+            <p>Witness the real-time rendering of your equations with our live preview feature. See how your formulas
+              look as you make edits, ensuring accuracy and visual appeal.</p>
+            <li>
+              <h4>Symbol Toolbar</h4>
+            </li>
+            <p>Access a comprehensive symbol toolbar, simplifying the insertion of mathematical symbols and special
+              characters. Our toolbar provides quick access to a wide range of LaTeX symbols for efficient equation
+              building.</p>
+            <li>
+              <h4>Export as Image</h4>
+            </li>
+            <p>Take your equations beyond the web app by exporting them as images. Share your formulas seamlessly in
+              documents, presentations, or any platform that supports image integration.</p>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <h2>Getting Started</h2>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h3>User Interface Overview</h3>
+          <ul>
+            <li>
+              <h4>Text Editor</h4>The main area on the left side of the screen is your text editor. Here, you can input
+              and edit your LaTeX code, creating the mathematical expressions and formulas you need.
+            </li>
+            <li>
+              <h4>Live Preview</h4>On the right side of the screen, you'll find the live preview section. As you type
+              and edit in the text editor, the live preview will dynamically update, allowing you to see how your
+              equations will look in real-time.
+            </li>
+            <li>
+              <h4>Symbol Toolbar</h4>Above the text editor, you'll find a comprehensive symbol toolbar. This toolbar
+              provides quick access to a variety of LaTeX symbols and special characters. Simply click on a symbol to
+              insert it directly into your document.
+            </li>
+            <li>
+              <h4>Export Image</h4>Below the text editor, a export image button is provided, upon clicking the live
+              preview will be exported as png image.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h2>Toolbar Usage</h2>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h3>How to use the toolbar?</h3>
+          <p>The symbol toolbar in the Latex Editor provides a convenient way to insert various mathematical symbols and
+            operators into your documents. The toolbar is organized into different categories, each containing a set of
+            related symbols. Below is a detailed explanation of each toolbar category and its functionality:</p>
+          <ul>
+            <li>
+              <h4>Accents</h4>The "Accents" category allows you to apply accents to your symbols, enhancing their
+              appearance. Choose from a variety of accents to add the perfect touch to your mathematical expressions.
+            </li>
+            <li>
+              <h4>Delimiters</h4>In the "Delimiters" category, you'll find a collection of delimiters to encapsulate and
+              structure your equations. Delimiters include parentheses, brackets, braces, and more.
+            </li>
+            <li>
+              <h4>Environments</h4>The "Environments" category provides a selection of environments for specialized
+              formatting. Choose the environment that suits your needs, such as aligning equations or creating matrices.
+            </li>
+            <li>
+              <h4>Logic & Set Theory</h4>For logical expressions and set theory, the "Logic & Set Theory" category
+              offers a range of symbols to represent operations like intersection, union, and logical connectives.
+            </li>
+            <li>
+              <h4>Letters and Unicode</h4>In the "Letters and Unicode" category, you can easily insert letters and
+              special Unicode characters into your equations. This is particularly useful for incorporating specific
+              symbols and alphabets.
+            </li>
+            <li>
+              <h4>Big Operators</h4>For large mathematical operators, the "Big Operators" category provides symbols like
+              summation and integration signs. Easily incorporate these operators for comprehensive mathematical
+              expressions.
+            </li>
+            <li>
+              <h4>Binary Operators</h4>The "Binary Operators" category includes symbols for binary operations, such as
+              plus, minus, multiplication, and division. Use these operators to build fundamental mathematical
+              expressions..
+            </li>
+            <li>
+              <h4>Fractions Operators</h4>Create fractions effortlessly with the "Fractions Operators" category. Choose
+              from a variety of fraction symbols to represent mathematical ratios in your equations.
+            </li>
+            <li>
+              <h4>Math Operators</h4>The "Maths Operators" category offers a diverse set of mathematical operators for a
+              wide range of calculations. From square roots to mathematical functions, find the operators you need.
+            </li>
+            <li>
+              <h4>Relational Operators</h4>In the "Relations" category, discover symbols for expressing relationships
+              between mathematical elements. Include symbols like equal, not equal, less than, and greater than.
+            </li>
+            <li>
+              <h4>Negated Relational Operators</h4>The "Negated Relations" category provides negated versions of
+              relation symbols, allowing you to express negations within mathematical statements.
+            </li>
+            <li>
+              <h4>Arrows</h4>For indicating direction or movement, the "Arrows" category offers a selection of arrow
+              symbols. Use these symbols to illustrate transitions or relationships in your equations.
+            </li>
+            <li>
+              <h4>Extended Arrows</h4>Explore extended arrow options in the "Ext Arrows" category. Choose from an array
+              of extended arrows to convey specific meanings within your mathematical expressions.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <h2>Frequently Asked Questions (FAQs)</h2>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h4>Q: What is the purpose of this Latex Editor web app?</h4>
+          <p>The Latex Editor is designed to assist users in formulating scientific and mathematical formulas using the
+            LaTeX language. It provides a simple text editor, live preview, and a symbol toolbar to facilitate the
+            creation of equations</p>
+          <h4>Q: How can I get started with the Latex Editor?</h4>
+          <p>To get started, simply navigate to the web app, and you'll find a user-friendly interface with a text
+            editor. You can type your LaTeX code in the editor, use the symbol toolbar for quick access to common
+            symbols, and view the live preview of your equations.</p>
+          <h4>Q: Can I export my equations as images?</h4>
+          <p>Yes, the Latex Editor allows you to export your equations as images. Simply use the export functionality
+            available in the app, and you can save your equations in various image formats.</p>
+          <h4>Q: Is there a limit to the number of equations I can create?</h4>
+          <p>There is no specific limit to the number of equations you can create. However, for optimal performance, we
+            recommend keeping your documents within a reasonable size.</p>
+          <h4>Troubleshooting</h4>
+          <h4>Issue: </strong>Equation not rendering correctly in the live preview</h4>
+          <p><strong>Solution: </strong>Ensure that your LaTeX code is valid. Check for syntax errors, unmatched braces,
+            or other issues. If the problem persists, try refreshing the page.</p>
+            <h4>Issue: </strong>Exported image is blank or incomplete.</h4>
+          <p><strong>Solution: </strong>Verify that your equation is visible in the live preview before exporting. If
+            the issue persists, try exporting the equation in a different image format.</p>
+            <h4>Issue: </strong>Symbols are not displaying in the toolbar</h4>
+          <p><strong>Solution: </strong>Ensure that your internet connection is stable. If the issue persists, try
+            reloading the page or using a different browser.</p>
+          <h4>Browser Compatibility</h4>
+          <p>The Latex Editor is optimized for modern web browsers such as Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge. Ensure that you are using the latest version of your preferred browser for the best experience.</p>
+          <h4>System Requirements</h4>
+          <p>The web app is designed to work on a variety of devices, including desktops, laptops, and tablets. Make sure your device has a reliable internet connection for optimal performance.          </p>
+          <h4>Known Limitations</h4>
+          <p>Complex LaTeX code or very large documents may result in slower performance.
+            Exported images may vary in quality based on the complexity of the equation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+   <div class="container">
+    <footer class="py-3 my-4">
+      <p class="text-center text-muted">Designed by Expandables for the <i class="bi bi-heart-fill"></i> of <i
+          class="bi bi-calculator"></i></p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
