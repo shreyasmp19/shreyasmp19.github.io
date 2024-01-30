@@ -714,33 +714,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // Generate dropdown menu dynamically
-    // function generateDropdownMenu(commands, dropdownId) {
-    //     var dropdownMenu = document.getElementById(dropdownId);
-
-    //     commands.forEach(function (command) {
-    //         var listItem = document.createElement("li");
-    //         var link = document.createElement("a");
-    //         link.href = "#";
-    //         link.className = "dropdown-item";
-
-    //         // Create a span to render the KaTeX symbol
-    //         var katexSpan = document.createElement("span");
-    //         katexSpan.innerHTML = katex.renderToString(command.command);
-
-    //         // Attach the onClick event to insert the symbol into the live preview
-    //         link.addEventListener("click", function () {
-    //             insertText(command.command);
-    //         });
-
-    //         // Append the KaTeX span to the link
-    //         link.appendChild(katexSpan);
-
-    //         listItem.appendChild(link);
-    //         dropdownMenu.appendChild(listItem);
-    //     });
-    // }
-
+    
     // Generate dropdown menu dynamically
     function generateDropdownMenu(commands, dropdownId) {
         var dropdownMenu = document.getElementById(dropdownId);
@@ -760,7 +734,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var listItem = document.createElement("li");
             var link = document.createElement("a");
-            link.href = "#";
             link.className = "dropdown-item";
 
             // Create a span to render the KaTeX symbol
